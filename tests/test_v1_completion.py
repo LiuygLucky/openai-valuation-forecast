@@ -431,12 +431,38 @@ def test_task_parses_date_and_explicit_units():
 
 
 @pytest.mark.parametrize(
+    ("question", "year"),
+    [
+        ("预测 OpenAI 今年底估值", 2026),
+        ("预测 OpenAI 今年12月底估值", 2026),
+        ("预测 OpenAI 明年年终估值", 2027),
+        ("预测 OpenAI 后年年底估值", 2028),
+        ("预测 OpenAI 2027年12月底估值", 2027),
+    ],
+)
+def test_task_resolves_supported_year_end_phrasings(question, year):
+    _, rules = load_config()
+    parsed, task = parse_task(question, rules, CUTOFF)
+    assert parsed.target_date.year == year
+    assert parsed.target_date.month == 12 and parsed.target_date.day == 31
+    assert task["field_origins"]["target_date"] == "question"
+
+
+@pytest.mark.parametrize(
     "question",
     [
         "OpenAI 2026-12-31 2027-12-31 valuation",
         "OpenAI Forge NPM valuation",
         "OpenAI 估值区间边界：500,750",
         "OpenAI 最高估值",
+        "OpenAI 2027年估值",
+        "OpenAI 明年第三季度估值",
+        "OpenAI 年底估值",
+        "OpenAI 2026年底及2027年估值",
+        "OpenAI 2027年Q4估值",
+        "OpenAI 春节前估值",
+        "OpenAI 三个月后估值",
+        "OpenAI 12/31 估值",
     ],
 )
 def test_ambiguous_tasks_rejected(question):

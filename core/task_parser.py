@@ -20,11 +20,34 @@ def parse_task(question: str, rules: MarketRules, as_of: datetime) -> tuple[Mark
         dates.append(date(int(year), 12, 31))
     for year in re.findall(r"(?:end of|year.end)\s*(20\d{2})", lower):
         dates.append(date(int(year), 12, 31))
-    if "今年年底" in question or "今年年末" in question:
-        dates.append(date(as_of.year, 12, 31))
-    if "明年年底" in question or "明年年末" in question:
-        dates.append(date(as_of.year + 1, 12, 31))
+    for year in re.findall(r"(20\d{2})\s*年\s*12\s*月\s*(?:底|末|31\s*日)", question):
+        dates.append(date(int(year), 12, 31))
+    relative_end = re.findall(
+        r"(今|明|后|本|来)年\s*(?:的\s*)?(?:年?底|年?末|年终|年尾|12\s*月\s*(?:底|末|31\s*日))",
+        question,
+    )
+    for word in relative_end:
+        dates.append(date(as_of.year + {"今": 0, "本": 0, "明": 1, "来": 1, "后": 2}[word], 12, 31))
     dates = list(dict.fromkeys(dates))
+    if re.search(r"第?[一二三四1-4]季度|Q[1-4]|next\s+quarter", question, re.I):
+        raise ValueError("Quarter targets require an explicit calendar day")
+    mentioned_years = {int(year) for year in re.findall(r"20\d{2}", question)}
+    if dates and mentioned_years - {day.year for day in dates}:
+        raise ValueError("Multiple or incomplete target years are ambiguous")
+    if not dates and re.search(
+        r"20\d{2}|今[年]|明[年]|后[年]|本年|来年|年底|年末|年终|年尾|"
+        r"\d{1,2}\s*月|\b\d{1,2}[/-]\d{1,2}\b|月底|月末|"
+        r"下周|下月|半年|季度|个月|春节|元旦|圣诞|国庆|"
+        r"第?[一二三四1-4]季度|Q[1-4]|"
+        r"this\s+year|next\s+year|end\s+of\s+year|year[ -]?end|"
+        r"\b(?:future|tomorrow|next\s+month|next\s+quarter)\b",
+        question,
+        re.I,
+    ):
+        raise ValueError(
+            "Question mentions a target time that cannot be resolved to a calendar day; "
+            "specify a full date or a supported year-end expression"
+        )
     if len(dates) > 1:
         raise ValueError(
             "Multiple target dates are ambiguous; use the separate information-cutoff input"
