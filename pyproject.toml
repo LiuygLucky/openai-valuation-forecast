@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cognitive-forecasting-agent"
+version = "1.0.0"
+description = "Traceable, bounded research and terminal valuation forecasting"
+requires-python = ">=3.12"
+dependencies = [
+  "pydantic>=2.10,<3", "langgraph>=1.0,<2", "httpx>=0.28,<1",
+  "numpy>=2,<3", "pandas>=2.2,<3", "scipy>=1.14,<2",
+  "faiss-cpu>=1.9,<2", "scikit-learn>=1.5,<2", "PyYAML>=6,<7",
+  "python-dotenv>=1,<2", "streamlit>=1.40,<2", "plotly>=6,<7"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+embedding = ["sentence-transformers>=3,<6"]
+
+[tool.setuptools.packages.find]
+include = ["core*", "perception*", "memory*", "reasoning*", "belief*", "forecasting*", "evaluation*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

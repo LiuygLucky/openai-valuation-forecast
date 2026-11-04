@@ -1,0 +1,83 @@
+{
+  "question": "预测 OpenAI 在 2026 年 12 月 31 日的私募估值区间概率。",
+  "as_of": "2026-11-02T06:30:00Z",
+  "target_date": "2026-12-31T23:59:59-05:00",
+  "valuation_metric": "private_company_equity_valuation_proxy",
+  "market_rules_source": "User research task: prompt.md sections 1.2 and 1.3; no contract verified",
+  "forecast_type": "terminal_interval",
+  "model_version": "v1.0",
+  "mode": "demo",
+  "unit": "USD_billion",
+  "probabilities": [
+    {
+      "interval": "<300B",
+      "probability": 0.0404
+    },
+    {
+      "interval": "300–500B",
+      "probability": 0.48024
+    },
+    {
+      "interval": "500–750B",
+      "probability": 0.40704
+    },
+    {
+      "interval": "750–1000B",
+      "probability": 0.06566
+    },
+    {
+      "interval": "≥1000B",
+      "probability": 0.00666
+    }
+  ],
+  "baseline_probabilities": [
+    {
+      "interval": "<300B",
+      "probability": 0.03638
+    },
+    {
+      "interval": "300–500B",
+      "probability": 0.46592
+    },
+    {
+      "interval": "500–750B",
+      "probability": 0.41908
+    },
+    {
+      "interval": "750–1000B",
+      "probability": 0.0712
+    },
+    {
+      "interval": "≥1000B",
+      "probability": 0.00742
+    }
+  ],
+  "median_valuation": 493.1089939996389,
+  "confidence_interval_90": [
+    308.5657332022558,
+    791.3183371454892
+  ],
+  "key_evidence_ids": [
+    "988cfd703210cff5810a42ce",
+    "19c0b401db8decf9b0e9d270",
+    "d1f5738fe0c02f2d7cf8c045",
+    "876704c984c89203c691d08e"
+  ],
+  "main_assumptions": [
+    "基准估值 500.0 USD billion；来源 https://synthetic.invalid/financing",
+    "先验参数：{'annual_log_volatility': 0.5, 'annual_log_drift': 0.0, 'years': 0.1640998998656425, 'proxy_extra_log_sigma': 0.2, 'seed': 42, 'samples': 50000, 'formula': 'V_T = anchor * exp(drift*T + sqrt(vol^2*T + proxy_sigma^2)*Z + clipped(event_shift*scenario_factor))'}",
+    "事件情景：{'effect_factors': [0, 1, 2], 'weights': [0.25, 0.5, 0.25], 'net_log_shift': -0.0125, 'max_total_log_shift': 0.25, 'interpretation': 'Heuristic event effect absent / central / doubled, not estimated probabilities'}",
+    "目标是终点估值区间，不是截止日期前触及阈值的路径事件。"
+  ],
+  "limitations": [
+    "启发式预测；波动率、事件幅度和情景权重未经历史数据校准。",
+    "可信度仅用于证据筛选，不被解释成事件发生概率。",
+    "融资估值代理与私募二级市场结算价格不同。",
+    "90% 区间为模型分布区间，不是经过验证的覆盖率承诺。",
+    "未核实真实 Polymarket 合约；使用配置的研究口径。",
+    "非校准启发式概率；不得解释成经过回测验证的后验。",
+    "DEMO / SYNTHETIC：所有输入是合成测试数据；无真实 API 调用。",
+    "本轮未取得新内容，后续仅按已有证据推断。",
+    "研究预算/迭代限制或无新增查询，保留未解决的信息缺口。"
+  ]
+}

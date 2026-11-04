@@ -1,0 +1,20 @@
+# User-defined terminal valuation research task; Polymarket supplies only the question.
+forecast_type: terminal_interval
+target_date: '2026-12-31T23:59:59-05:00'
+valuation_metric: NPM_implied_equity_valuation
+unit: USD_billion
+timezone: America/New_York
+rules_status: user_defined_research_task
+market_rules_source: 'User clarification 2026-11-04: Nasdaq Private Market NPM Price based OpenAI valuation; terminal interval remains independently defined.'
+provider: NPM
+missing_data_rule: refuse_without_sourced_anchor
+ipo_rule: 'Private valuation metric becomes undefined after IPO; refuse if confirmed before target, revisit settlement definition.'
+update_rule: 'NPM public OpenAI data page reports both implied_valuation in USD and price in USD/share; the feed snapshot observed on 2026-11-04 shows 2026-10-29 valuation about $1.255T and $1015.13/share. Use the implied_valuation field for USD-billion intervals. Preserve observation date separately from retrieval time; use America/New_York terminal-day convention, with NPM 1:00PM ET publication timing.'
+boundary_rule: '[lower, upper); final interval includes all finite values above its lower bound'
+intervals:
+  - {label: '<500B', lower: 0, upper: 500}
+  - {label: '500–750B', lower: 500, upper: 750}
+  - {label: '750–1000B', lower: 750, upper: 1000}
+  - {label: '1000–1250B', lower: 1000, upper: 1250}
+  - {label: '1250–1500B', lower: 1250, upper: 1500}
+  - {label: '≥1500B', lower: 1500, upper: null}

@@ -1,0 +1,60 @@
+{
+  "label": "offline_counterfactual_not_a_new_live_forecast",
+  "source_run_id": "3b5d47809dbb4830821e8fc36989a05f",
+  "source_as_of": "2026-11-04T03:39:57.314442+00:00",
+  "old_model_version": "v1.3",
+  "new_model_version": "v1.4",
+  "same_saved_evidence_and_parameters": true,
+  "new_network_calls": 0,
+  "future_realization_risks": [
+    {
+      "event_key": "openai-cash-burn-2026-2030",
+      "evidence_ids": [
+        "bac2c674a700d38d204eabb3"
+      ],
+      "log_amplitude": 0.025,
+      "direction": "negative"
+    }
+  ],
+  "intervals": [
+    {
+      "interval": "<500B",
+      "old_probability": 0.0,
+      "counterfactual_probability": 0.0,
+      "difference_percentage_points": 0.0
+    },
+    {
+      "interval": "500–750B",
+      "old_probability": 0.00518,
+      "counterfactual_probability": 0.00516,
+      "difference_percentage_points": -0.002
+    },
+    {
+      "interval": "750–1000B",
+      "old_probability": 0.1193,
+      "counterfactual_probability": 0.12056,
+      "difference_percentage_points": 0.126
+    },
+    {
+      "interval": "1000–1250B",
+      "old_probability": 0.35486,
+      "counterfactual_probability": 0.3545,
+      "difference_percentage_points": -0.036
+    },
+    {
+      "interval": "1250–1500B",
+      "old_probability": 0.32042,
+      "counterfactual_probability": 0.31934,
+      "difference_percentage_points": -0.108
+    },
+    {
+      "interval": "≥1500B",
+      "old_probability": 0.20024,
+      "counterfactual_probability": 0.20044,
+      "difference_percentage_points": 0.02
+    }
+  ],
+  "old_median_usd_billion": 1262.3932845768027,
+  "counterfactual_median_usd_billion": 1262.3226399801792,
+  "warning": "Scenario magnitudes and weights are uncalibrated; this is an algorithm comparison, not evidence of predictive accuracy."
+}

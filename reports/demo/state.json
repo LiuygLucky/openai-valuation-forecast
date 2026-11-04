@@ -1,0 +1,822 @@
+{
+  "run_id": "aa64a85defe54ab3941835b25b09b311",
+  "question": "预测 OpenAI 在 2026 年 12 月 31 日的私募估值区间概率。",
+  "as_of": "2026-11-02T06:30:00Z",
+  "target_date": "2026-12-31T23:59:59-05:00",
+  "mode": "demo",
+  "research_plan": [
+    {
+      "research_question": "OpenAI financing valuation",
+      "rationale": "DEMO coverage of key valuation drivers",
+      "priority": 1,
+      "suggested_queries": [
+        "OpenAI financing valuation"
+      ],
+      "expected_information": "Timestamped sourced facts"
+    },
+    {
+      "research_question": "OpenAI revenue compute costs",
+      "rationale": "DEMO coverage of key valuation drivers",
+      "priority": 2,
+      "suggested_queries": [
+        "OpenAI revenue compute costs"
+      ],
+      "expected_information": "Timestamped sourced facts"
+    },
+    {
+      "research_question": "OpenAI competition regulatory risks",
+      "rationale": "DEMO coverage of key valuation drivers",
+      "priority": 3,
+      "suggested_queries": [
+        "OpenAI competition regulatory risks"
+      ],
+      "expected_information": "Timestamped sourced facts"
+    }
+  ],
+  "search_results": [
+    {
+      "title": "DEMO / SYNTHETIC financing",
+      "url": "https://synthetic.invalid/financing",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-23T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-22T06:30:00Z",
+      "content": "SYNTHETIC OpenAI financing valued equity at USD 500 billion.",
+      "query": "OpenAI NPM Forge valuation quote methodology",
+      "synthetic": true
+    },
+    {
+      "title": "DEMO / SYNTHETIC revenue",
+      "url": "https://synthetic.invalid/revenue",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-27T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-26T06:30:00Z",
+      "content": "SYNTHETIC enterprise subscription revenue increased; no actual financial disclosure.",
+      "query": "OpenAI NPM Forge valuation quote methodology",
+      "synthetic": true
+    },
+    {
+      "title": "DEMO / SYNTHETIC profitability",
+      "url": "https://synthetic.invalid/profitability",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-26T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-25T06:30:00Z",
+      "content": "SYNTHETIC compute commitments raised costs and financing needs.",
+      "query": "OpenAI NPM Forge valuation quote methodology",
+      "synthetic": true
+    },
+    {
+      "title": "DEMO / SYNTHETIC competition",
+      "url": "https://synthetic.invalid/competition",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-25T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-24T06:30:00Z",
+      "content": "SYNTHETIC competitors cut prices, creating margin pressure.",
+      "query": "OpenAI NPM Forge valuation quote methodology",
+      "synthetic": true
+    }
+  ],
+  "evidence_ids": [
+    "988cfd703210cff5810a42ce",
+    "19c0b401db8decf9b0e9d270",
+    "d1f5738fe0c02f2d7cf8c045",
+    "876704c984c89203c691d08e"
+  ],
+  "retrieved_evidence": [
+    {
+      "evidence_id": "988cfd703210cff5810a42ce",
+      "title": "DEMO / SYNTHETIC financing",
+      "source_url": "https://synthetic.invalid/financing",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-23T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-22T06:30:00Z",
+      "raw_content": "SYNTHETIC OpenAI financing valued equity at USD 500 billion.",
+      "claim": "SYNTHETIC OpenAI financing valued equity at USD 500 billion.",
+      "category": "financing",
+      "confidence": 0.45,
+      "relevance": 1.0,
+      "impact_direction": "positive",
+      "reasoning": "SYNTHETIC test fixture, not a real fact",
+      "source_type": "unknown",
+      "epistemic_status": "Assumption",
+      "event_key": "synthetic-financing",
+      "stale": false,
+      "synthetic": true,
+      "valuation_usd_billion": 500.0,
+      "valuation_quote": "USD 500 billion",
+      "valuation_metric": "financing_proxy"
+    },
+    {
+      "evidence_id": "19c0b401db8decf9b0e9d270",
+      "title": "DEMO / SYNTHETIC revenue",
+      "source_url": "https://synthetic.invalid/revenue",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-27T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-26T06:30:00Z",
+      "raw_content": "SYNTHETIC enterprise subscription revenue increased; no actual financial disclosure.",
+      "claim": "SYNTHETIC enterprise subscription revenue increased; no actual financial disclosure.",
+      "category": "revenue",
+      "confidence": 0.45,
+      "relevance": 1.0,
+      "impact_direction": "positive",
+      "reasoning": "SYNTHETIC test fixture, not a real fact",
+      "source_type": "unknown",
+      "epistemic_status": "Assumption",
+      "event_key": "synthetic-revenue",
+      "stale": false,
+      "synthetic": true,
+      "valuation_usd_billion": null,
+      "valuation_quote": null,
+      "valuation_metric": null
+    },
+    {
+      "evidence_id": "d1f5738fe0c02f2d7cf8c045",
+      "title": "DEMO / SYNTHETIC competition",
+      "source_url": "https://synthetic.invalid/competition",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-25T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-24T06:30:00Z",
+      "raw_content": "SYNTHETIC competitors cut prices, creating margin pressure.",
+      "claim": "SYNTHETIC competitors cut prices, creating margin pressure.",
+      "category": "competition",
+      "confidence": 0.45,
+      "relevance": 1.0,
+      "impact_direction": "negative",
+      "reasoning": "SYNTHETIC test fixture, not a real fact",
+      "source_type": "unknown",
+      "epistemic_status": "Assumption",
+      "event_key": "synthetic-competition",
+      "stale": false,
+      "synthetic": true,
+      "valuation_usd_billion": null,
+      "valuation_quote": null,
+      "valuation_metric": null
+    },
+    {
+      "evidence_id": "876704c984c89203c691d08e",
+      "title": "DEMO / SYNTHETIC profitability",
+      "source_url": "https://synthetic.invalid/profitability",
+      "source": "synthetic.invalid",
+      "published_at": "2026-10-26T06:30:00Z",
+      "retrieved_at": "2026-11-02T06:30:00Z",
+      "event_at": "2026-10-25T06:30:00Z",
+      "raw_content": "SYNTHETIC compute commitments raised costs and financing needs.",
+      "claim": "SYNTHETIC compute commitments raised costs and financing needs.",
+      "category": "profitability",
+      "confidence": 0.45,
+      "relevance": 1.0,
+      "impact_direction": "negative",
+      "reasoning": "SYNTHETIC test fixture, not a real fact",
+      "source_type": "unknown",
+      "epistemic_status": "Assumption",
+      "event_key": "synthetic-profitability",
+      "stale": false,
+      "synthetic": true,
+      "valuation_usd_billion": null,
+      "valuation_quote": null,
+      "valuation_metric": null
+    }
+  ],
+  "hypotheses": [
+    {
+      "event": "SYNTHETIC OpenAI financing valued equity at USD 500 billion.",
+      "mechanism": [
+        "financing",
+        "Changes expected future cash flows or required return",
+        "May change terminal equity valuation"
+      ],
+      "direction": "positive",
+      "counterarguments": [
+        "Effect may already be priced in"
+      ],
+      "evidence_ids": [
+        "988cfd703210cff5810a42ce"
+      ],
+      "uncertainties": [
+        "Impact magnitude is not calibrated"
+      ],
+      "priced_in": "possible"
+    },
+    {
+      "event": "SYNTHETIC enterprise subscription revenue increased; no actual financial disclosure.",
+      "mechanism": [
+        "revenue",
+        "Changes expected future cash flows or required return",
+        "May change terminal equity valuation"
+      ],
+      "direction": "positive",
+      "counterarguments": [
+        "Effect may already be priced in"
+      ],
+      "evidence_ids": [
+        "19c0b401db8decf9b0e9d270"
+      ],
+      "uncertainties": [
+        "Impact magnitude is not calibrated"
+      ],
+      "priced_in": "possible"
+    },
+    {
+      "event": "SYNTHETIC competitors cut prices, creating margin pressure.",
+      "mechanism": [
+        "competition",
+        "Changes expected future cash flows or required return",
+        "May change terminal equity valuation"
+      ],
+      "direction": "negative",
+      "counterarguments": [
+        "Effect may already be priced in"
+      ],
+      "evidence_ids": [
+        "d1f5738fe0c02f2d7cf8c045"
+      ],
+      "uncertainties": [
+        "Impact magnitude is not calibrated"
+      ],
+      "priced_in": "possible"
+    },
+    {
+      "event": "SYNTHETIC compute commitments raised costs and financing needs.",
+      "mechanism": [
+        "profitability",
+        "Changes expected future cash flows or required return",
+        "May change terminal equity valuation"
+      ],
+      "direction": "negative",
+      "counterarguments": [
+        "Effect may already be priced in"
+      ],
+      "evidence_ids": [
+        "876704c984c89203c691d08e"
+      ],
+      "uncertainties": [
+        "Impact magnitude is not calibrated"
+      ],
+      "priced_in": "possible"
+    }
+  ],
+  "causal_relations": [
+    {
+      "from": "financing",
+      "to": "Changes expected future cash flows or required return",
+      "evidence_ids": [
+        "988cfd703210cff5810a42ce"
+      ],
+      "status": "Model Inference"
+    },
+    {
+      "from": "Changes expected future cash flows or required return",
+      "to": "May change terminal equity valuation",
+      "evidence_ids": [
+        "988cfd703210cff5810a42ce"
+      ],
+      "status": "Model Inference"
+    },
+    {
+      "from": "revenue",
+      "to": "Changes expected future cash flows or required return",
+      "evidence_ids": [
+        "19c0b401db8decf9b0e9d270"
+      ],
+      "status": "Model Inference"
+    },
+    {
+      "from": "Changes expected future cash flows or required return",
+      "to": "May change terminal equity valuation",
+      "evidence_ids": [
+        "19c0b401db8decf9b0e9d270"
+      ],
+      "status": "Model Inference"
+    },
+    {
+      "from": "competition",
+      "to": "Changes expected future cash flows or required return",
+      "evidence_ids": [
+        "d1f5738fe0c02f2d7cf8c045"
+      ],
+      "status": "Model Inference"
+    },
+    {
+      "from": "Changes expected future cash flows or required return",
+      "to": "May change terminal equity valuation",
+      "evidence_ids": [
+        "d1f5738fe0c02f2d7cf8c045"
+      ],
+      "status": "Model Inference"
+    },
+    {
+      "from": "profitability",
+      "to": "Changes expected future cash flows or required return",
+      "evidence_ids": [
+        "876704c984c89203c691d08e"
+      ],
+      "status": "Model Inference"
+    },
+    {
+      "from": "Changes expected future cash flows or required return",
+      "to": "May change terminal equity valuation",
+      "evidence_ids": [
+        "876704c984c89203c691d08e"
+      ],
+      "status": "Model Inference"
+    }
+  ],
+  "critique": {
+    "accepted_evidence": [
+      "19c0b401db8decf9b0e9d270",
+      "876704c984c89203c691d08e",
+      "988cfd703210cff5810a42ce",
+      "d1f5738fe0c02f2d7cf8c045"
+    ],
+    "disputed_evidence": [],
+    "missing_information": [
+      "No verified NPM/Forge terminal settlement quote",
+      "未取得配置口径下可验证的私募二级市场结算报价"
+    ],
+    "potential_biases": [
+      "SYNTHETIC fixtures cannot establish real predictive accuracy",
+      "因果路径是模型假设；来源可信度不等于事件概率"
+    ],
+    "recommended_followup_queries": [
+      "OpenAI NPM Forge valuation quote methodology"
+    ],
+    "invalid_settlement_evidence": []
+  },
+  "information_gaps": [
+    "No verified NPM/Forge terminal settlement quote",
+    "未取得配置口径下可验证的私募二级市场结算报价"
+  ],
+  "search_history": [
+    {
+      "query": "OpenAI financing valuation",
+      "iteration": 1,
+      "count": 4,
+      "status": "ok",
+      "time": "2026-11-02T06:54:54.640206+00:00"
+    },
+    {
+      "query": "OpenAI revenue compute costs",
+      "iteration": 1,
+      "count": 4,
+      "status": "ok",
+      "time": "2026-11-02T06:54:54.640206+00:00"
+    },
+    {
+      "query": "OpenAI competition regulatory risks",
+      "iteration": 1,
+      "count": 4,
+      "status": "ok",
+      "time": "2026-11-02T06:54:54.640206+00:00"
+    },
+    {
+      "query": "OpenAI NPM Forge valuation quote methodology",
+      "iteration": 2,
+      "count": 4,
+      "status": "ok",
+      "time": "2026-11-02T06:54:54.714026+00:00"
+    }
+  ],
+  "belief_state": {
+    "prior_assumptions": {
+      "annual_log_volatility": 0.5,
+      "annual_log_drift": 0.0,
+      "years": 0.1640998998656425,
+      "proxy_extra_log_sigma": 0.2,
+      "seed": 42,
+      "samples": 50000,
+      "formula": "V_T = anchor * exp(drift*T + sqrt(vol^2*T + proxy_sigma^2)*Z + clipped(event_shift*scenario_factor))"
+    },
+    "baseline_valuation": 500.0,
+    "baseline_source": "https://synthetic.invalid/financing",
+    "baseline_evidence_id": "988cfd703210cff5810a42ce",
+    "baseline_published_at": "2026-10-23T06:30:00+00:00",
+    "event_adjustments": [
+      {
+        "event_key": "synthetic-revenue",
+        "evidence_ids": [
+          "19c0b401db8decf9b0e9d270"
+        ],
+        "log_shift": 0.0125,
+        "reason": "Explicit heuristic log shift, discounted for possible prior pricing; NOT calibrated"
+      },
+      {
+        "event_key": "synthetic-profitability",
+        "evidence_ids": [
+          "876704c984c89203c691d08e"
+        ],
+        "log_shift": -0.0125,
+        "reason": "Explicit heuristic log shift, discounted for possible prior pricing; NOT calibrated"
+      },
+      {
+        "event_key": "synthetic-financing",
+        "evidence_ids": [
+          "988cfd703210cff5810a42ce"
+        ],
+        "log_shift": 0.0,
+        "reason": "At or before anchor publication: assumed embedded in baseline"
+      },
+      {
+        "event_key": "synthetic-competition",
+        "evidence_ids": [
+          "d1f5738fe0c02f2d7cf8c045"
+        ],
+        "log_shift": -0.0125,
+        "reason": "Explicit heuristic log shift, discounted for possible prior pricing; NOT calibrated"
+      }
+    ],
+    "scenario_assumptions": {
+      "effect_factors": [
+        0,
+        1,
+        2
+      ],
+      "weights": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "net_log_shift": -0.0125,
+      "max_total_log_shift": 0.25,
+      "interpretation": "Heuristic event effect absent / central / doubled, not estimated probabilities"
+    },
+    "posterior_distribution": [
+      {
+        "interval": "<300B",
+        "probability": 0.0404
+      },
+      {
+        "interval": "300–500B",
+        "probability": 0.48024
+      },
+      {
+        "interval": "500–750B",
+        "probability": 0.40704
+      },
+      {
+        "interval": "750–1000B",
+        "probability": 0.06566
+      },
+      {
+        "interval": "≥1000B",
+        "probability": 0.00666
+      }
+    ],
+    "baseline_distribution": [
+      {
+        "interval": "<300B",
+        "probability": 0.03638
+      },
+      {
+        "interval": "300–500B",
+        "probability": 0.46592
+      },
+      {
+        "interval": "500–750B",
+        "probability": 0.41908
+      },
+      {
+        "interval": "750–1000B",
+        "probability": 0.0712
+      },
+      {
+        "interval": "≥1000B",
+        "probability": 0.00742
+      }
+    ],
+    "median": 493.1089939996389,
+    "interval_90": [
+      308.5657332022558,
+      791.3183371454892
+    ],
+    "histogram": {
+      "counts": [
+        7,
+        50,
+        189,
+        541,
+        1166,
+        2006,
+        2911,
+        3682,
+        4314,
+        4636,
+        4680,
+        4365,
+        3890,
+        3581,
+        2803,
+        2404,
+        1962,
+        1566,
+        1262,
+        992,
+        706,
+        552,
+        481,
+        339,
+        246,
+        168,
+        136,
+        103,
+        69,
+        62,
+        36,
+        26,
+        18,
+        15,
+        11,
+        9,
+        3,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "edges": [
+        141.5639592964418,
+        173.00816145968105,
+        204.45236362292027,
+        235.89656578615953,
+        267.34076794939875,
+        298.784970112638,
+        330.22917227587726,
+        361.6733744391165,
+        393.1175766023557,
+        424.56177876559497,
+        456.0059809288342,
+        487.4501830920735,
+        518.8943852553127,
+        550.3385874185519,
+        581.7827895817911,
+        613.2269917450304,
+        644.6711939082697,
+        676.1153960715089,
+        707.5595982347481,
+        739.0038003979874,
+        770.4480025612266,
+        801.892204724466,
+        833.3364068877052,
+        864.7806090509443,
+        896.2248112141837,
+        927.6690133774229,
+        959.1132155406622,
+        990.5574177039014,
+        1022.0016198671406,
+        1053.44582203038,
+        1084.890024193619,
+        1116.3342263568584,
+        1147.7784285200976,
+        1179.2226306833368,
+        1210.6668328465762,
+        1242.1110350098152,
+        1273.5552371730546,
+        1304.999439336294,
+        1336.443641499533,
+        1367.8878436627724,
+        1399.3320458260114,
+        1430.7762479892508,
+        1462.2204501524902,
+        1493.6646523157292,
+        1525.1088544789686,
+        1556.5530566422076,
+        1587.997258805447,
+        1619.4414609686864,
+        1650.8856631319254,
+        1682.3298652951648,
+        1713.7740674584038,
+        1745.2182696216432,
+        1776.6624717848827,
+        1808.1066739481216,
+        1839.550876111361,
+        1870.9950782746,
+        1902.4392804378394,
+        1933.8834826010789,
+        1965.3276847643178,
+        1996.7718869275573,
+        2028.2160890907965
+      ]
+    },
+    "uncertainty_notes": [
+      "启发式预测；波动率、事件幅度和情景权重未经历史数据校准。",
+      "可信度仅用于证据筛选，不被解释成事件发生概率。",
+      "融资估值代理与私募二级市场结算价格不同。",
+      "90% 区间为模型分布区间，不是经过验证的覆盖率承诺。"
+    ],
+    "rules_snapshot": {
+      "forecast_type": "terminal_interval",
+      "target_date": "2026-12-31T23:59:59-05:00",
+      "valuation_metric": "private_company_equity_valuation_proxy",
+      "unit": "USD_billion",
+      "timezone": "America/New_York",
+      "rules_status": "research_definition_unverified_contract",
+      "market_rules_source": "User research task: prompt.md sections 1.2 and 1.3; no contract verified",
+      "provider": "financing_proxy",
+      "missing_data_rule": "refuse_without_sourced_anchor",
+      "ipo_rule": "Private valuation metric becomes undefined after IPO; refuse if confirmed before target, revisit settlement definition.",
+      "update_rule": "Timestamped public information only; no equivalence between Forge and NPM.",
+      "boundary_rule": "[lower, upper); final interval includes all finite values above its lower bound",
+      "intervals": [
+        {
+          "label": "<300B",
+          "lower": 0.0,
+          "upper": 300.0
+        },
+        {
+          "label": "300–500B",
+          "lower": 300.0,
+          "upper": 500.0
+        },
+        {
+          "label": "500–750B",
+          "lower": 500.0,
+          "upper": 750.0
+        },
+        {
+          "label": "750–1000B",
+          "lower": 750.0,
+          "upper": 1000.0
+        },
+        {
+          "label": "≥1000B",
+          "lower": 1000.0,
+          "upper": null
+        }
+      ]
+    },
+    "settings_snapshot": {
+      "max_iterations": 2,
+      "queries_per_round": 3,
+      "max_search_calls": 9,
+      "max_llm_calls": 10,
+      "max_tokens": 250000,
+      "max_output_tokens": 4000,
+      "budget_usd": 2.0,
+      "llm_usd_per_million_tokens": 5.0,
+      "search_usd_per_call": 0.02,
+      "search_retries": 1,
+      "search_results": 5,
+      "search_topic": "news",
+      "max_documents_per_round": 8,
+      "document_excerpt_chars": 5000,
+      "retrieval_k": 16,
+      "embedding_model": "hashing-char-1024",
+      "seed": 42,
+      "samples": 50000,
+      "annual_log_volatility": 0.5,
+      "annual_log_drift": 0.0,
+      "proxy_extra_log_sigma": 0.2,
+      "max_total_log_shift": 0.25,
+      "event_log_shift": 0.025,
+      "stale_days": 180,
+      "database": "data/deliverable_demo.sqlite",
+      "output_dir": "reports/demo_runs"
+    }
+  },
+  "forecast": {
+    "question": "预测 OpenAI 在 2026 年 12 月 31 日的私募估值区间概率。",
+    "as_of": "2026-11-02T06:30:00Z",
+    "target_date": "2026-12-31T23:59:59-05:00",
+    "valuation_metric": "private_company_equity_valuation_proxy",
+    "market_rules_source": "User research task: prompt.md sections 1.2 and 1.3; no contract verified",
+    "forecast_type": "terminal_interval",
+    "model_version": "v1.0",
+    "mode": "demo",
+    "unit": "USD_billion",
+    "probabilities": [
+      {
+        "interval": "<300B",
+        "probability": 0.0404
+      },
+      {
+        "interval": "300–500B",
+        "probability": 0.48024
+      },
+      {
+        "interval": "500–750B",
+        "probability": 0.40704
+      },
+      {
+        "interval": "750–1000B",
+        "probability": 0.06566
+      },
+      {
+        "interval": "≥1000B",
+        "probability": 0.00666
+      }
+    ],
+    "baseline_probabilities": [
+      {
+        "interval": "<300B",
+        "probability": 0.03638
+      },
+      {
+        "interval": "300–500B",
+        "probability": 0.46592
+      },
+      {
+        "interval": "500–750B",
+        "probability": 0.41908
+      },
+      {
+        "interval": "750–1000B",
+        "probability": 0.0712
+      },
+      {
+        "interval": "≥1000B",
+        "probability": 0.00742
+      }
+    ],
+    "median_valuation": 493.1089939996389,
+    "confidence_interval_90": [
+      308.5657332022558,
+      791.3183371454892
+    ],
+    "key_evidence_ids": [
+      "988cfd703210cff5810a42ce",
+      "19c0b401db8decf9b0e9d270",
+      "d1f5738fe0c02f2d7cf8c045",
+      "876704c984c89203c691d08e"
+    ],
+    "main_assumptions": [
+      "基准估值 500.0 USD billion；来源 https://synthetic.invalid/financing",
+      "先验参数：{'annual_log_volatility': 0.5, 'annual_log_drift': 0.0, 'years': 0.1640998998656425, 'proxy_extra_log_sigma': 0.2, 'seed': 42, 'samples': 50000, 'formula': 'V_T = anchor * exp(drift*T + sqrt(vol^2*T + proxy_sigma^2)*Z + clipped(event_shift*scenario_factor))'}",
+      "事件情景：{'effect_factors': [0, 1, 2], 'weights': [0.25, 0.5, 0.25], 'net_log_shift': -0.0125, 'max_total_log_shift': 0.25, 'interpretation': 'Heuristic event effect absent / central / doubled, not estimated probabilities'}",
+      "目标是终点估值区间，不是截止日期前触及阈值的路径事件。"
+    ],
+    "limitations": [
+      "启发式预测；波动率、事件幅度和情景权重未经历史数据校准。",
+      "可信度仅用于证据筛选，不被解释成事件发生概率。",
+      "融资估值代理与私募二级市场结算价格不同。",
+      "90% 区间为模型分布区间，不是经过验证的覆盖率承诺。",
+      "未核实真实 Polymarket 合约；使用配置的研究口径。",
+      "非校准启发式概率；不得解释成经过回测验证的后验。",
+      "DEMO / SYNTHETIC：所有输入是合成测试数据；无真实 API 调用。",
+      "本轮未取得新内容，后续仅按已有证据推断。",
+      "研究预算/迭代限制或无新增查询，保留未解决的信息缺口。"
+    ]
+  },
+  "iteration_count": 2,
+  "warnings": [
+    "未核实真实 Polymarket 合约；使用配置的研究口径。",
+    "非校准启发式概率；不得解释成经过回测验证的后验。",
+    "DEMO / SYNTHETIC：所有输入是合成测试数据；无真实 API 调用。",
+    "本轮未取得新内容，后续仅按已有证据推断。",
+    "研究预算/迭代限制或无新增查询，保留未解决的信息缺口。"
+  ],
+  "trace": [
+    "ParseQuestion",
+    "PlanResearch",
+    "Search",
+    "ProcessEvidence",
+    "RetrieveMemory",
+    "Reason",
+    "Critique",
+    "CheckInformationSufficiency",
+    "Search",
+    "ProcessEvidence",
+    "RetrieveMemory",
+    "Reason",
+    "Critique",
+    "CheckInformationSufficiency",
+    "UpdateBelief",
+    "GenerateForecast",
+    "GenerateReport",
+    "SaveRun"
+  ],
+  "usage": {
+    "llm_calls": 0,
+    "search_calls": 0,
+    "reserved_tokens": 0,
+    "actual_tokens": 0,
+    "usage_reported": false,
+    "estimated_cost_usd": 0.0
+  },
+  "generated_at": "2026-11-02T06:54:54.591204Z",
+  "status": "completed",
+  "report_path": "D:\\Desktop\\openai_valuation_forecast\\reports\\demo_runs\\demo\\aa64a85defe54ab3941835b25b09b311\\report.md"
+}
